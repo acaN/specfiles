@@ -29,6 +29,7 @@ ln -s $(pwd) ./_build/src
 %build
 export GOPATH=$(pwd)/_build
 cd %{name}-%{commit}
+go get -insecure -u https://v2ray.com/core?go-get=1
 export LDFLAGS="-X main.VERSION=%{version}"
 CGO_ENABLED=0 go build -v -ldflags "$LDFLAGS" -gcflags "" -o _bin/v2ray-plugin
 
