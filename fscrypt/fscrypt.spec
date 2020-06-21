@@ -33,9 +33,9 @@ make
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}/usr/local/lib/security/
 mkdir -p %{buildroot}/usr/local/share/pam-configs/pam_fscrypt/
-install -m 755 %{name}/bin/fscrypt %{buildroot}%{_bindir}
-install -m 644 %{name}/bin/pam_fscrypt.so %{buildroot}/usr/local/lib/security/
-install -m 644 %{name}/pam_fscrypt/config %{buildroot}/usr/local/share/pam-configs/pam_fscrypt/
+install -m 755 %{name}-%{version}/bin/fscrypt %{buildroot}%{_bindir}
+install -m 644 %{name}-%{version}/bin/pam_fscrypt.so %{buildroot}/usr/local/lib/security/
+install -m 644 %{name}-%{version}/pam_fscrypt/config %{buildroot}/usr/local/share/pam-configs/pam_fscrypt/
 
 %files
 %{_bindir}/fscrypt
