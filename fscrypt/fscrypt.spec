@@ -19,7 +19,7 @@ fscrypt is a high-level tool for the management of Linux filesystem encryption.
 
 %prep
 rm -rf %{name}-%{version}
-%setup -c -T -D -a 0 -a 1
+%setup -c -T -D -a 0
 mkdir -p ./_build
 ln -s $(pwd) ./_build/src
 
