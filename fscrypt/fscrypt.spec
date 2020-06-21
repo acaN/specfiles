@@ -25,7 +25,7 @@ ln -s $(pwd) ./_build/src
 
 %build
 export GOPATH=$(pwd)/_build
-cd %{name}
+cd %{name}-%{version}
 export LDFLAGS="-X main.VERSION=%{version}"
 CGO_ENABLED=0 make
 
