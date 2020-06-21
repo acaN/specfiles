@@ -1,10 +1,10 @@
-%global commit ca361195f584f3904c9440ac012bd4e8611f7b52
+%global commit 606454af70411bacb99a98605f6021b56ccd3586
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global v2ray_ver 4.19.1
+%global v2ray_ver 4.23.2
 %define debug_package %{nil}
 
 Name:           v2ray-plugin
-Version:        1.2.0
+Version:        1.3.1
 Release:        1%{?dist}
 Summary:        A SIP003 plugin based on v2ray
 
