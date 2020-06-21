@@ -27,7 +27,7 @@ ln -s $(pwd) ./_build/src
 export GOPATH=$(pwd)/_build
 cd %{name}-%{version}
 export LDFLAGS="-X main.VERSION=%{version}"
-CGO_ENABLED=0 make
+make
 
 %install
 mkdir -p %{buildroot}%{_bindir}
